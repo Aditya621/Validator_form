@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+:root {
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9fafb;
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+.container {
+  background-color: #e2dede;
+  box-shadow: 0px 24px 50px rgba(0, 0, 0, 0.4);
+  width: 400px;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 0 0 30px;
+  color: rgb(172, 99, 50);
+  transition: all 5s ease-out;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+@keyframes example {
+  0% {
+    font-size: 0px;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+/* h2:hover {
+  /* transform: skewX(10deg);*/
+/* transform: rotate(360deg); */
+/* transform: rotateY(360deg); */
+
+/* }  */
+.form {
+  padding: 30px 40px;
+}
+.form-control {
+  /* text-align: center; */
+  margin-bottom: 10px;
+  /* padding-bottom: 10px; */
+  position: relative;
+}
+.form-control label {
+  color: rgb(172, 99, 50);
+  display: inline-block;
+  font-weight: bold;
+
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.form-control label:hover {
+  /* transform: translate(0px, -10px);*/
+  transform: skewX(10deg);
+}
+.form-control input {
+  border: 2px solid #f9fafb;
+  border-radius: 15px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  color: rgb(172, 99, 50);
+  transition: all 0.5s ease;
+
+  /* font-weight: bold; */
+}
+.form-control input:hover {
+  font-size: 15px;
+}
+
+.form-control input :focus {
+  outline: 0;
+  border-color: #f9fafb;
+}
+
+/* .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.contact_number {
+  background-color: #f9fafb;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9fafb;
+  box-shadow: 0px 24px 50px rgba(0, 0, 0, 0.4);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+} */
+/* 
+.dropbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+} */
+
+#btn {
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+@keyframes mybtn {
+  0% {
+    font-size: 0px;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+#btn {
+  transition: all 0.3s ease;
+}
+
+#btn:hover {
+  font-size: 20px;
+  transform: skewX(10deg);
+}
+
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  cursor: pointer;
+  background-color: rgb(172, 99, 50);
+  border: 2px solid rgb(172, 99, 50);
+  border-radius: 15px;
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  font-weight: bold;
+}
