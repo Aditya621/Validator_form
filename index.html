@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" class="form">
+        <h2>Register Form</h2>
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" placeholder="Enter Name" id="username" />
+          <small>Error</small><br />
+        </div>
+
+        <!-- <div class="content">
+          <label for="last_name"> Last Name : </label>
+          <input type="text" placeholder="Last Name" id="last_name" /><br />
+        </div> -->
+
+        <div class="form-control">
+          <label for="email">Email :</label>
+          <input type="email" placeholder="Enter Valid Email" id="email" />
+          <small>Error message </small><br />
+        </div>
+
+        <!-- <div class="dropdown">
+          <button class="dropbtn">Dropdown</button><br />
+          <div class="dropdown-content">
+            <a href="#">202-555-0124 </a>
+            <a href="#">202-555-0130 </a>
+            <a href="#">202-555-0163</a>
+          </div>
+        </div> -->
+
+        <div class="form-control">
+          <label for="password"> Password : </label><br />
+          <input
+            type="password"
+            placeholder="Enter Valid Password"
+            id="password"
+          />
+          <small>Error message </small><br />
+        </div>
+
+        <div class="form-control">
+          <label for="password"> Password : </label><br />
+          <input
+            type="password"
+            placeholder="confirm Password"
+            id="password2"
+          />
+          <small>oops! Make sure you enter the same password</small><br />
+        </div>
+
+        <button type="submit" id="btn">Register Me</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
